@@ -1,0 +1,26 @@
+:root {
+  --primary-text-color: #36241c;
+  --light-text-color: #bfc882;
+  --light-bg-color: #f9f5f3;
+  --bg-color: #fdeed9;
+  --bg-litCla: #532a09;
+  --bg-mat: #a47e1b;
+  --bg-litMex: #e5c9ae;
+  --bg-lang: #a4b75c;
+  --bg-pho: #33160a;
+  --bg-library: #260701;
+  --bg-space: #5c3324;
+  --bg-book: #644234;
+
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Noto Serif", serif;
+  --primary-fontSize: 14px;
+  --secondary-fontSize: 16px;
+
+  --nav-pad: 1rem 0.5rem;
+  --section-pad: 2rem 1rem;
+  --container-pad: 1rem 1rem;
+
+  --container-shadow: 1px 2px 15px 1px
+    color-mix(in srgb, black 30%, transparent 70%);
+}

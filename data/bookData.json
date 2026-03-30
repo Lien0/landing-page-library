@@ -1,0 +1,104 @@
+{
+  "libreria": {
+    "nombre": "Librería El Arconte - Sucursal Centro",
+    "ultimaActualizacion": "2026-03-20T12:00:00Z",
+    "ubicación": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.5250271454024!2d-99.13698042420829!3d19.432917692410403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fed2ad54fb41%3A0x41f019ed070abfbb!2sUlices%20Joy!5e0!3m2!1ses-419!2smx!4v1774037681354!5m2!1ses-419!2smx' width='auto' height='auto' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+    "secciones": [
+      {
+        "id": "SEC-01",
+        "categoria": "Literatura Clásica",
+        "descripcion": "Obras inmortales de la humanidad.",
+        "libros": [
+          {
+            "id": "LC-001",
+            "titulo": "Don Quijote de la Mancha",
+            "autor": "Miguel de Cervantes",
+            "precio": 450.0,
+            "stock": 15,
+            "idioma": "Español",
+            "paginas": 1056
+          },
+          {
+            "id": "LC-002",
+            "titulo": "La Odisea",
+            "autor": "Homero",
+            "precio": 320.0,
+            "stock": 8,
+            "idioma": "Griego/Español",
+            "paginas": 448
+          }
+        ]
+      },
+      {
+        "id": "SEC-02",
+        "categoria": "Ciencias Matemáticas",
+        "descripcion": "Cálculo, Álgebra y Física Teórica.",
+        "libros": [
+          {
+            "id": "CM-001",
+            "titulo": "Cálculo de una Variable",
+            "autor": "James Stewart",
+            "precio": 890.0,
+            "stock": 5,
+            "isbn": "978-6075265506"
+          }
+        ]
+      },
+      {
+        "id": "SEC-03",
+        "categoria": "Lenguas Extranjeras",
+        "descripcion": "Métodos de aprendizaje y diccionarios.",
+        "libros": [
+          {
+            "id": "LE-001",
+            "titulo": "English Grammar in Use",
+            "autor": "Raymond Murphy",
+            "precio": 550.0,
+            "stock": 20,
+            "nivel": "Intermedio"
+          }
+        ]
+      },
+      {
+        "id": "SEC-04",
+        "categoria": "Literatura Mexicana",
+        "descripcion": "Grandes autores de nuestra tierra.",
+        "libros": [
+          {
+            "id": "LM-001",
+            "titulo": "Pedro Páramo",
+            "autor": "Juan Rulfo",
+            "precio": 210.0,
+            "stock": 30,
+            "genero": "Realismo Mágico"
+          },
+          {
+            "id": "LM-002",
+            "titulo": "Laberinto de la Soledad",
+            "autor": "Octavio Paz",
+            "precio": 280.0,
+            "stock": 12,
+            "genero": "Ensayo"
+          }
+        ]
+      },
+      {
+        "id": "SEC-05",
+        "categoria": "Galerías de Fotos",
+        "descripcion": "Libros de arte visual y fotografía profesional.",
+        "libros": [
+          {
+            "id": "GF-001",
+            "titulo": "México desde el Aire",
+            "autor": "Varios Autores",
+            "precio": 1200.0,
+            "stock": 3,
+            "formato": "Tapa dura - Gran formato",
+            "dimensiones": "30x40 cm",
+            "imagenPreview": "../assets/images/mexico_aire.jpg"
+          }
+        ]
+      }
+    ]
+  }
+}
