@@ -1,3 +1,5 @@
+//Función para mostrar el módal cada que se selecciona uno de los diferentes libros,
+//se obtienen los datos por libro y estos se renderizan en sus respectivos sitios.
 export function switchModal(book) {
   const main = document.querySelector(".main_modal");
   console.log(book);

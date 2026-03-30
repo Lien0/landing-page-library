@@ -1,3 +1,7 @@
+//Función para actualizar las acciones que se hacen en los links de navegación
+//estos links se muestran de distinta forma tanto para dispositivos móviles como para 
+//monitores grandes, creando un responsive adecuado para la página sin sacrificar 
+//funcionalidad y diseño.
 export function navActions() {
   let flag = 0;
 
@@ -28,11 +32,16 @@ export function navActions() {
       headerLinks.classList.remove("nav-links-visible");
     }
   }
+  //Creamos un debounce para retrasar la lectura de la actualización de la ventana
+  //evitamos consumir recursos inecesarios y tras ms de no realizar la accón se actualiza
+  //la ventana con el nuevo tamaño
   const screener = debounce(actions, 100);
+  //Obtenemos el tamaño de la ventana para así poder saber que estilo se asignara a
+  //la barra de navegación.
   window.addEventListener("resize", screener);
   const navBtn = document.querySelector("#navBtn");
   if (!navBtn) return;
-
+  
   navBtn.addEventListener("click", () => {
     console.log(flag);
     if (flag === 0) {

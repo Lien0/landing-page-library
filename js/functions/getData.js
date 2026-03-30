@@ -1,6 +1,8 @@
 import { GET } from "../apis/books/get_books.js";
 import { switchModal } from "./switchModal.js";
 
+//Función que conecta con la api de books la cual obtiene la página del libro de la cuál se 
+//necesita obtener la infomración.
 export async function getData() {
   const params = new URLSearchParams(window.location.search);
   const param = params.get("book");
@@ -9,6 +11,8 @@ export async function getData() {
 
   let data;
 
+
+  //switch para obtener la categoría adecuada según la página en la que se navega.
   switch (param) {
     case "clasica":
       data = await GET("Literatura Clásica");
@@ -42,6 +46,7 @@ export async function getData() {
 
   const bookBtns = document.querySelectorAll(".book");
 
+  //Según los datos obtenidos y el libro seleccionado se envia la información a el modal.
   bookBtns.forEach((btn, index) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();

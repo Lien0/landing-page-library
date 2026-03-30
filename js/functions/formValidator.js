@@ -1,3 +1,4 @@
+//Función para validar los datos del formulario.
 export function formValidator() {
   const form = document.querySelector(".form");
   const content = document.querySelectorAll(".form_content");
@@ -5,6 +6,8 @@ export function formValidator() {
   let timer;
 
   form.addEventListener("submit", (e) => {
+    //Evitamos el comportamiento por defecto al hacer submit
+    //y obtenemos los datos que se envián en los input.
     e.preventDefault();
     const name = document.querySelector("#name").value;
     const tel = document.querySelector("#tel").value;
@@ -29,6 +32,7 @@ export function formValidator() {
         `;
       return;
     }
+    //Hacemos una comprobación con una función para revisar el teléfono.
     if (!telValidator(tel)) {
       content[1].innerHTML += `
             <p style="font-size: 10px; color: red; height: 10px;">
@@ -37,6 +41,7 @@ export function formValidator() {
         `;
       return;
     }
+    //Hacemos una comparación con una función para revisar el correo.
     if (!emailValidator(email)) {
       content[2].innerHTML += `
             <p style="font-size: 10px; color: red; height: 10px;">
@@ -46,8 +51,11 @@ export function formValidator() {
       return;
     }
 
+    //Hacemos reset en los valores del formulario.
     form.reset();
+    //Consumimos los datos.
     console.log(`Nombre: ${name}, Teléfono: ${tel}, Correo: ${email}`);
+    //Mostramos un mensaje al usuario de la información enviada con éxito.
     form.innerHTML += `
      <p style="color: green;">¡ Informacion enviada !</p>
     `;
@@ -57,6 +65,7 @@ export function formValidator() {
   });
 }
 
+//Función para validar teléfono.
 function telValidator(tel) {
   if (Number(tel) && tel.length === 10) {
     return true;
@@ -64,10 +73,12 @@ function telValidator(tel) {
   return false;
 }
 
+//Función para validar correo con RegEx
 function emailValidator(email) {
   return /^[^/s@]+@[^/s@]+\.[^/s@]+$/.test(email);
 }
 
+//Quitamos los avisos de error que se crean al no ingresar información válida.
 function clearFormat(form) {
   form.innerHTML = `
         <div class="form_content">

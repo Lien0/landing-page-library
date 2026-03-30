@@ -1,3 +1,5 @@
+//Smooth para los botones de la barra de navegación e implementar una fácil navegación en la página
+//principal
 export function smoothScroll() {
   const anchors = document.querySelectorAll('a[href^="#"]');
   if (anchors.length === 0) return;

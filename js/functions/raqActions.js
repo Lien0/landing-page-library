@@ -1,3 +1,5 @@
+//Función que hace rotar los botones del RAQ, así como mostrar u ocultar las preguntas
+//al dar click en el botón.
 export function raqActions() {
   const btns = document.querySelectorAll(".quest_btn");
   const answers = document.querySelectorAll(".answer");

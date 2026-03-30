@@ -1,3 +1,6 @@
+//Conexión Api fetch para el archivo json, obtenemos los datos de libros, categoria y descripción
+//el req nos trae el nombre de la categoría en la que se encuentra el libro,
+//con esto podemos hacer solo la solicitud de los archivos que se necesitan por página abierta.
 export async function GET(req) {
   const url = "../data/bookData.json";
   try {

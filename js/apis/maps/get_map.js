@@ -1,3 +1,4 @@
+//Obtenemos los datos del json para obtener el mapa, sol oretornamos el mapa.
 export async function GetMap() {
   const url = "./data/bookData.json";
   try {
